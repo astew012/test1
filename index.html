@@ -7,8 +7,10 @@
   <title></title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
 
-  <meta property="og:title" content="">
+  <!-- probably not wanted
+ <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
@@ -20,13 +22,23 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+-->
+
 </head>
 
 <body style="background-color: lightblue;">
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+  <script>
+    function setup() {
+      createCanvas(400, 400);
+    }
+
+    function draw() {
+      background(173, 216, 230);
+      fill(255, 0, 0);
+      circle(200, 200, 200);
+    }
+  </script>
 
 </body>
 
